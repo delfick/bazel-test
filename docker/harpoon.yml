@@ -1,0 +1,18 @@
+---
+
+folders:
+  root: "{config_root}/.."
+
+context:
+  use_gitignore: true
+
+image_index: gcr.io/lifx-cloud/
+
+images:
+  one:
+    context:
+      parent_dir: "{folders.root}/one"
+
+    commands:
+      - FROM centos:7
+      - ADD .
