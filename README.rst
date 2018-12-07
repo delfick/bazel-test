@@ -1,4 +1,8 @@
-So if you run::
+First you need venvstarter::
+
+    $ pip3 install venvstarter
+
+then if you run::
 
     $ bazel test //:one_test --test_output streamed
 
